@@ -1,4 +1,4 @@
-num = int(input())
+lnum = int(input())
 cont = 1
 while (cont <= 10):
     mult = num * cont
