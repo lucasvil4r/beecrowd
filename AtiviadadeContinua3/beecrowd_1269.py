@@ -13,14 +13,3 @@ def remover(num):
         print(f'código {num} não encontrado')
 
 carrinho = input().split(" ")
-
-'''
-while acao == 'exibir' or acao == 'encerrar':
-
-    if acao == 'exibir':
-        exibir(carrinho)
-
-    elif acao == 'encerrar':
-        exibir(carrinho)
-        break
-'''
