@@ -12,7 +12,12 @@ def remover(num):
     else:
         print(f'código {num} não encontrado')
 
+def encerrar():
+    carrinho.sort(key=int)
+    exibir(carrinho)
+
 carrinho = input().split(" ")
+carrinho.sort()
 
 while True:
 
@@ -29,5 +34,5 @@ while True:
         remover(opcao[1])
 
     elif acao == 'encerrar':
-        exibir(carrinho)
+        encerrar()
         break
