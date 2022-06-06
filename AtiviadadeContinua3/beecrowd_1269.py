@@ -1,6 +1,6 @@
 def exibir(lista):
-    for item in lista:
-        print(item, end=" ")
+    carrinho.sort(key=int)
+    print(*lista)
 
 def adicionar(num):
     carrinho.append(num)
@@ -14,13 +14,20 @@ def remover(num):
 
 carrinho = input().split(" ")
 
-'''
-while acao == 'exibir' or acao == 'encerrar':
+while True:
 
+    opcao = input().split(" ")
+    acao = (opcao[0])
+    
     if acao == 'exibir':
         exibir(carrinho)
+    
+    elif acao == 'adicionar':
+        adicionar(opcao[1])
+
+    elif acao == 'remover':
+        remover(opcao[1])
 
     elif acao == 'encerrar':
         exibir(carrinho)
         break
-'''
